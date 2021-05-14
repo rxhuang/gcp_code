@@ -1,6 +1,7 @@
 import logging
 import json
 
+
 def main(req):
     logging.info('Python HTTP trigger function processed a request.')
 
@@ -20,9 +21,9 @@ def main(req):
 
 
 def powerset(nset):
-        out = [[]]
-        
-        for element in nset:
-            out += [i + [element] for i in out]
-        
-        return out
+    out = [[]]
+
+    for element in nset:
+        out += [i + [element] for i in out]
+
+    return out
